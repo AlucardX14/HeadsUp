@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HeadsUp!</string>
+    <string name="title_activity_topic_selector">TopicSelector</string>
+    <string name="start_btn">Iniciar</string>
+    <string name="remaning_time">Tiempo restante:</string>
+    <string name="txtWordScored">Puntuación</string>
+    <string name="txtBtnTryAgain">Reintentar</string>
+    <string name="txtTapChoose">Cambiar Categoría</string>
+    <string name="txtTopics">Categorías</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseGray"
+    tools:context=".ScoreboardActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ListView
+        android:id="@+id/resultList"
+        android:layout_width="328dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCategory"/>
+
+
+    <TextView
+        android:id="@+id/txtvWordsScored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/boogaloo"
+        android:text="@string/txtWordScored"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/themeBlue"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="99dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/baloo"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVScoredAmount" />
+
+
+    <TextView
+        android:id="@+id/txtVScoredAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/baloo"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/themeRoyalBlue"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtvWordsScored" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <Button
+            android:id="@+id/txtChangeTopicBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@color/themeBlue"
+            android:backgroundTint="@color/themeBlue"
+            android:fontFamily="@font/acme"
+            android:text="@string/txtTapChoose"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/baseGray"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/tryAgainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:background="@color/themeBlue"
+            android:backgroundTint="@color/themeBlue"
+            android:fontFamily="@font/acme"
+            android:text="@string/txtBtnTryAgain"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/baseGray"
+            android:textSize="24sp"
+            android:layout_margin="5dp"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ItlaApp.dev.headsup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:screenOrientation="landscape"
+        android:configChanges="orientation|keyboardHidden"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:screenOrientation="landscape"
+            android:name="com.ItlaApp.dev.headsup.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        ></activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name="com.ItlaApp.dev.headsup.TopicSelectorActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        ></activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name="com.ItlaApp.dev.headsup.SplashScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="landscape"
+            android:name="com.ItlaApp.dev.headsup.ScoreboardActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        ></activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

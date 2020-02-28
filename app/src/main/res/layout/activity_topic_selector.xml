@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseGray"
+    tools:context=".TopicSelectorActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RadioGroup
+        android:id="@+id/topicsRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtChangeTopicBtn" />
+
+    <TextView
+        android:id="@+id/txtChangeTopicBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="49dp"
+        android:background="@color/themeRed"
+        android:fontFamily="@font/boogaloo"
+        android:padding="5sp"
+        android:text="@string/txtTopics"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/baseGray"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/themeBlue"
+        android:backgroundTint="@color/themeRed"
+        android:fontFamily="@font/acme"
+        android:text="@string/start_btn"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/baseGray"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
